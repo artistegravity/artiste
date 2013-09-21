@@ -1,0 +1,61 @@
+	{% extends "registration/artiste_main.html" %}
+	{% block title %}Sign up{% endblock %}
+	{% block content %}
+<div id="wrapper">
+	<div id="wrapper2">
+		<div id="wrapper-bgtop">
+			<div id="page">
+				<div id="content">
+					<div class="reg_form">
+						<h2 class="title">Sign Up</h2>
+							{% if form.errors %}
+								<p class="required_errors" size="2px" style="margin:5px 20px 2px;">Please correct the errors below: {{ form.non_field_errors }}</p>
+							{% endif %}
+							<p><font style="size:1px"></font></p>
+							<form action="/accounts/register/" method="post">{% csrf_token %}
+								
+								<p> 
+									<label for="id_username">Username:</label>{{ form.username }}
+									{% if form.username.errors %}
+										<label class="required_errors">*</label	>
+									{% endif %}
+								</p>
+								<p>
+									<label for="id_email">Email address:</label>{{ form.email }}
+									{% if form.email.errors %}
+										<label class="required_errors">*</label	>
+									{% endif %}
+								</p>
+								<p>
+									<label for="id_password1">Password:</label>{{ form.password1 }}
+									{% if form.password1.errors %}
+										<label class="required_errors">*</label	>
+									{% endif %}
+								</p>
+								<p>
+									<label for="id_password2">Confirm Password:</label>{{ form.password2 }}
+									{% if form.password2.errors %}
+										<label class="required_errors">*</label	>
+									{% endif %}
+								</p>
+								
+								<div class="button_sbmt_div">
+									<input type="submit" value="Sign Up" class="button_sbmt"/>
+								</div>
+								&nbsp;
+								&nbsp;
+							</form> 
+					</div>
+				</div>
+			</div>
+			<!-- end #page -->
+		</div>
+	</div>
+</div>
+		<script>
+				$( document ).ready(function() {
+					highlightNavLink('nav_link_signup');
+					onPageLoadSuper();
+				});
+		</script>
+  {% endblock %}

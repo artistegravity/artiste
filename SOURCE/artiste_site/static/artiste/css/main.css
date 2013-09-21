@@ -1,0 +1,273 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #E5E5E5 url(../img/mainbody.jpg) repeat-x left top;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #6E6E6E;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arvo', serif;
+	font-weight: normal;
+	color: #611F0D;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2.8em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 240%;
+}
+
+ul, ol {
+}
+
+a {
+	text-decoration: none;
+	color: #611F0D;
+}
+
+a:hover {
+}
+
+#wrapper {
+	background: #FEFEFE url(../img/header.jpg) repeat-x left top;
+}
+
+.container {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+/* Header */
+
+#header {
+	width: 940px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	width: 340px;
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+}
+
+#logo h1, #logo p {
+}
+
+#logo h1 {
+	padding: 0px 0px 0px 0px;
+	letter-spacing: -3px;
+	text-transform: lowercase;
+	font-size: 48px;
+}
+
+#logo h1 a {
+	color: #CE9B87;
+}
+
+/* Splash */
+
+#splash-wrapper {
+	height: 180px;
+	background: url(../img/splash.jpg) no-repeat center top;
+}
+
+#splash {
+	width: 530px;
+	margin: 0px auto;
+	padding: 22px 280px 30px 50px;
+}
+
+#splash h2 {
+	margin: 0px;
+	padding: 0px 0px 10px 0px;
+	font-family: 'Cookie', cursive;
+	font-size: 44px;
+	color: #BC907A;
+}
+
+#splash p {
+	line-height: 180%;
+	color: #C9B0A6
+}
+
+/* Menu */
+
+#menu {
+	float: right;
+	width: 600px;
+	height: 70px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#menu ul {
+	float: right;
+	margin: 0px;
+	padding: 28px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+	padding: 0px 0px 0px 40px;
+}
+
+#menu a {
+	display: block;
+	height: 20px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Arvo', serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #927160;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#menu .current_page_item a {
+}
+
+/* Page */
+
+#page {
+	width: 940px;
+	margin: 0 auto;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 620px;
+	padding: 70px 10px 0px 10px;
+}
+
+/* Footer */
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#D4D4D4;
+}
+
+#footer p {
+	line-height: normal;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: normal;
+	width: 530px;
+	margin: 0px auto;
+	padding: 22px 280px 30px 50px;
+}
+
+/* reg_form */
+
+.reg_form {
+	overflow: hidden;
+	margin-top: 10px;
+	padding: 30px 30px 0px 30px;
+	border: 1px solid #E2E2E2;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	border-radius: 16px;
+	border:1px solid #C2B69F;
+	-webkit-box-shadow: #B3B3B3 10px 10px 10px;
+	-moz-box-shadow: #B3B3B3 10px 10px 10px; 
+	box-shadow: #B3B3B3 10px 10px 10px;
+	background: #FFFFFF url(../img/messagebody.jpg) repeat-x left top;
+}
+
+.reg_form .title {
+	margin: 0px;
+	padding: 7px 0px 0px 0px;
+}
+
+.required_errors{
+		size:4px;
+		color:brown;
+}
+.space{
+		size:4px;
+		padding: 1px 0px 0px 0px;
+}
+.reg_form span {
+		vertical-align: middle;
+		display: block;
+		width: 100%;
+	}
+.reg_form label { 
+		display: inline-block; 
+		float: none;
+		width: 120px;
+		padding: 0;
+		margin: 5px 20px 2px;
+		text-align: left; 
+	}
+.reg_form input {
+		display: inline-block;
+		float: none;
+		width:220px;
+		margin:2px 0 0 5px; 
+		padding:2px 2px;
+	}
+.button_sbmt_div {
+		width: 10px;
+		padding: 2px;
+		margin: 1px 160px 20px;
+	}
+.button_sbmt {
+		background:#8B8878;
+		color:#FFFFFF;
+		padding: 5px 20px 5px 20px;
+		-webkit-border-radius:5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border:2px solid #C2B69F;
+		-webkit-box-shadow: #C2B69F 1px 1px 1px;
+		-moz-box-shadow: #C2B69F 1px 1px 1px; box-shadow: #C2B69F 1px 1px 1px;
+		cursor:pointer;
+	}
+.button_sbmt:hover{
+		background:#2F4F4F;
+}
+.button_sbmt:active{
+		background:#8B0000;
+}	

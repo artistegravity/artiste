@@ -1,0 +1,48 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Artiste</title>
+<link href="{% block icon %}{% static "artiste/img/artiste_favicon.ico" %}{% endblock %}" rel="icon" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="{% block stylesheet %}{% static "artiste/css/site.css" %}{% endblock %}" />{% block extrastyle %}{% endblock %}
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'/>
+<!-- scripts -->
+<script src="{% block jquery_script_js %}{% static 'artiste/js/jquery-1.10.2.min.js' %}{% endblock %}"></script>
+<script src="{% block nav_global_js %}{% static 'artiste/js/nav_global.js' %}{% endblock %}"></script>
+<!-- scripts -->
+</head>
+<body>
+<div id="header" class="container">
+	<div id="logo">
+		<h1><a href="#"></a></h1>
+	</div>
+	<div id="menu">
+		<ul>
+			<li id="nav_link_signup"><a href="{% url 'accounts:registration_register'%}">Sign Up</a></li>
+			<li id="nav_link_signin"><a href="{% url 'artiste_auth:auth_login'%}">Sign In</a></li>
+			<li id="nav_link_about"><a href="{% url 'navigation:about_us'%}">About</a></li>
+			<li id="nav_link_contact"><a href="{% url 'navigation:contact_us'%}">Contact</a></li>
+		</ul>
+	</div>
+</div>
+<div id="splash-wrapper">
+	<div id="splash">
+		<h2>Artiste - your art</h2>
+		<p>New to artiste. Sign up now and experience the artiste for yourself. Create and share your art. Develop them with collaborations. Publish them to your friends and family and lot more, all for free.</p>
+	</div>
+</div>
+<!-- end #header -->
+	{% block content %}
+	{% endblock %}
+<div id="footer">
+	<div class="content">
+		<p>Copyright (c) 2013 ArtisteGravity.com. All rights reserved.</p>
+	</div>
+</div>
+<!-- end #footer -->
+</body>
+</html>

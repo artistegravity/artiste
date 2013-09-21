@@ -1,0 +1,38 @@
+form .reg_form_container span {
+		vertical-align: middle;
+		display: block;
+		width: 100%;
+	}
+form .reg_form_container label { 
+		display: inline-block; 
+		float: none;
+		width: 120px;
+		padding: 0;
+		margin: 5px 20px 2px;
+		text-align: left; 
+	}
+form .reg_form_container input {
+		display: inline-block;
+		float: none;
+		width:240px;
+		margin:2px 0 0 5px; 
+		padding:2px 2px;
+	}
+form .button_sbmt {
+		display: inline-block;
+		float: none;
+		width: 60px;
+		padding: 2px;
+		margin: 5px 350px 2px;
+	}
+.outer_conatiner {
+		margin-top:30px;
+		margin-left:auto;
+		margin-right:auto;
+		width:50%;
+		-webkit-border-radius: 16px;-moz-border-radius: 16px;border-radius: 16px;border:1px solid #C2B69F;background:rgba(80,123,173,0.7);-webkit-box-shadow: #B3B3B3 10px 10px 10px;-moz-box-shadow: #B3B3B3 10px 10px 10px; box-shadow: #B3B3B3 10px 10px 10px;
+}
+.required_errors{
+		size:4px;
+		color:brown;
+}

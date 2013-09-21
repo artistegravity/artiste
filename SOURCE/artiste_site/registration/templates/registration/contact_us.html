@@ -1,0 +1,28 @@
+	{% extends "registration/artiste_main.html" %}
+	{% block title %}Sign up{% endblock %}
+	{% block content %}
+			<div id="page">
+				<div id="content">
+					<div class="message">
+						<h3 class="title"><a href="#">Welcome to artiste</a></h3>
+						<div style="clear: both;">&nbsp;</div>
+						<div class="entry">
+							<p>
+								send and email to artiste@gmail.com
+							</p>
+							<p>
+								More to be updated soon... 
+							</p>
+						</div>
+					</div>
+					<div style="clear: both;">&nbsp;</div>
+				</div>
+					<div style="clear: both;">&nbsp;</div>
+			</div>
+			<script>
+				$( document ).ready(function() {
+					highlightNavLink('nav_link_contact');
+					onPageLoadSuper();
+				});
+			</script>
+    {% endblock %}

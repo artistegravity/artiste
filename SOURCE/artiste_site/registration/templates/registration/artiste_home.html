@@ -1,0 +1,54 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Artiste</title>
+<link href="{% block icon %}{% static "artiste/img/artiste_favicon.ico" %}{% endblock %}" rel="icon" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="{% block stylesheet %}{% static "artiste/css/home.css" %}{% endblock %}" />{% block extrastyle %}{% endblock %}
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'/>
+<!-- scripts -->
+<script src="{% block jquery_script_js %}{% static 'artiste/js/jquery-1.10.2.min.js' %}{% endblock %}"></script>
+<script src="{% block nav_global_js %}{% static 'artiste/js/nav_global.js' %}{% endblock %}"></script>
+<!-- scripts -->
+</head>
+<body>
+<div id="header" class="container">
+	<div id="logo">
+		<h1><a href="#">artiste</a></h1>
+	</div>
+	<div id="search" >
+			<form method="get" action="#">
+				<div>
+					<input type="text" name="s" id="search-text" value="" placeHolder="Search Friends"/>
+					<input type="submit" id="search-submit" value="GO"/>
+				</div>
+			</form>
+	</div>
+	<nav>
+		<ul>
+			<li id="nav_link_groups"><a href="#">Groups</a></li>
+			<li id="nav_link_albums"><a href="#" >Albums</a></li>
+			<li id="nav_link_share"><a href="#">Share</a></li>
+			<li id="nav_link_wall"><a href="#">Wall</a></li>
+			<li id="nav_link_wall"><a href="#">Settings</a>
+				<ul>
+					<li id="nav_link_signout"><a href="{% url 'artiste_auth:auth_login'%}">Sign_Out</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+	{% block content %}
+	{% endblock %}
+<div id="footer">
+	<div class="content">
+		<p>Copyright (c) 2013 ArtisteGravity.com. All rights reserved.</p>
+	</div>
+</div>
+</body>
+</html>

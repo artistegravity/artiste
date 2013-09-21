@@ -1,0 +1,52 @@
+{% extends "registration/artiste_main.html" %}
+
+{% block title %}Log in{% endblock %}
+
+{% block content %}
+<div id="wrapper">
+	<div id="wrapper2">
+		<div id="wrapper-bgtop">
+			<div id="page">
+				<div id="content">
+					<div class="reg_form">
+						<h2 class="title">Sign In</h2>
+						<form method="post" action="?next={{ next|default:"/" }}">{% csrf_token %}
+						<p>
+							{% if form.errors %}
+								<p class="required_errors">Invalid username or password !</p>
+							{% endif %}
+							<label for="id_username">Username:</label>{{ form.username }}
+							{% if form.username.errors %} 
+								<label class="required_errors">*</label	>
+								<span class="error">{{ form.username.errors|join:", " }}</span>
+							{% endif %}
+						</p>
+						<p>
+							<label for="id_password">Password:</label>{{ form.password }}
+							{% if form.password.errors %} 
+								<label class="required_errors">*</label	>
+								<span class="error">{{ form.password.errors|join:", " }}</span>
+							{% endif %}</p>
+						<div class="button_sbmt_div">
+							<input type="submit" value="Sign in" class="button_sbmt" />
+						</div>
+						<input type="hidden" name="next" value="/home" />
+					</form>
+					</div>
+				</div>
+			</div>
+			<!-- end #page -->
+		</div>
+	</div>
+</div>
+		<script>
+				$( document ).ready(function() {
+					highlightNavLink('nav_link_signin');
+					onPageLoadSuper();
+				});
+		</script>
+  {% endblock %}
+{% block content-related %}
+<p>If you don't have an account, you can <a href="/accounts/register/">sign
+up</a> for one.
+{% endblock %}
